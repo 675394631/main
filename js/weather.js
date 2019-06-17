@@ -34,7 +34,7 @@ function InitTime() {
     var lunarData = calendar.solar2lunar(date.getFullYear(), date.getMonth() + 1, date.getDate());
     var lunarDate = date.Format('yyyy-MM-dd') + '&emsp;' + lunarData.ncWeek + '&emsp;农历' + lunarData.IMonthCn + lunarData.IDayCn;
     $('#weather .date').html(lunarDate);
-    setInterval(function () {
+    setInterval(function () { 
         var time = new Date().Format('hh:mm');
         $('#weather .time').html(time);
     }, 1000 * 20);

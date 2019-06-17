@@ -44,7 +44,7 @@ function getTodayWeather() {
     $.ajax({
         type: 'get',
         async: false,
-        url: 'http://api.k780.com/?app=weather.today&weaid=海门&appkey=27887&sign=f2dbe52229a7c54add1c3770f8dab8b5&format=json&jsoncallback=data',
+        url: 'https://api.k780.com/?app=weather.today&weaid=海门&appkey=27887&sign=f2dbe52229a7c54add1c3770f8dab8b5&format=json&jsoncallback=data',
         dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'data',
@@ -69,7 +69,7 @@ function getFutureWeather() {
     $.ajax({
         type: 'get',
         async: false,
-        url: 'http://api.k780.com/?app=weather.future&weaid=海门&appkey=27887&sign=f2dbe52229a7c54add1c3770f8dab8b5&format=json&jsoncallback=data1',
+        url: 'https://api.k780.com/?app=weather.future&weaid=海门&appkey=27887&sign=f2dbe52229a7c54add1c3770f8dab8b5&format=json&jsoncallback=data1',
         dataType: 'jsonp',
         jsonp: 'callback',
         jsonpCallback: 'data1',

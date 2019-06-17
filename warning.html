@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>海门市农村基层防汛预报预警展播</title>
+    <link rel="stylesheet/less" href="./css/warning.less">
+    <script src="./js/less.min.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <!-- 滚动新闻 -->
+    <div id="rollNews">
+        <div class="icon"></div>
+        <span>预警通告</span>
+        <div class="mar">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                今日8时，海门闸坝流量xxm/s，海门闸坝流量xxm/s，海门闸坝流量xxm/s，海门闸坝流量xxm/s。
+            </marquee>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sideLeft">
+                <iframe id="weatheriframe" src="./iframe/weatheriframe.html" frameborder="0"></iframe>
+            <div class="height10"></div>
+            <iframe id="rain" src="./iframe/rainiframe.html" frameborder="0"></iframe>
+        </div>
+        <div class="sideRight">
+                <iframe id="river" src="./iframe/riveriframe.html" frameborder="0"></iframe>
+            <div class="height10"></div>
+                <iframe id="area" src="./iframe/areaiframe.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/calendar.js"></script>
+<script src="./js/warning.js"></script>
+
+</html>

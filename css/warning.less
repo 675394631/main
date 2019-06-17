@@ -1,8 +1,9 @@
 /*基本样式*/
 
 html {
-    font-family: "宋体";
-    overflow-x : hidden;
+    // font-family: "宋体";
+    font-family   : "Microsoft YaHei";
+    overflow-x    : hidden;
 }
 
 body {
@@ -93,46 +94,24 @@ textarea:-moz-placeholder {
     color: #ffffff;
 }
 
-.red {
-    color: #e60449;
-}
 
-.orange {
-    color: #f97b00;
-}
 
-.green {
-    color: #38d800;
-}
-
-.blue {
-    color: #00baff;
-}
-
-.violet {
-    color: #de00ff;
-}
-
-.yellow {
-    color: #fffc00;
-}
-.circle{
-    background: #5de5f0;
-    width: 0.8vw;
-    display: inline-block;
-    height: 0.8vw;
+.circle {
+    background   : #5de5f0;
+    width        : 0.8vw;
+    display      : inline-block;
+    height       : 0.8vw;
     border-radius: 50%;
 }
-.redselected{
+
+.redselected {
     color: red;
 }
+
 .height10 {
     height: 1.85vh;
 }
 
-.height95 {
-    height: 0.876vh;
-}
 
 /*正文*/
 .header {
@@ -150,211 +129,47 @@ textarea:-moz-placeholder {
 
 #rollNews>.icon {
     float     : left;
-    width     : 30px;
-    height    : 30px;
+    width     : 2vw;
+    height    : 2vw;
     background: url('../img/小喇叭.png') no-repeat center;
 }
 
 #rollNews>span {
     float: left;
     color: white;
-    width: 70px;
+    width: 5vw;
 }
 
 #rollNews .mar {
-    margin-left: 100px;
-    height     : 30px;
+    margin-left: 7vw;
+    height     : 2vw;
     color      : #dc6502;
-    font-size  : 14px;
+    font-size  : 0.8vw;
 }
 
 
 /* 滚动新闻 end */
 
 .main {
-    width : 98.5vw;
-    margin: 0vh auto;
-    height: 90vh;
+    width          : 98.5vw;
+    margin         : 0vh auto;
+    height         : 90vh;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
 }
 
 .sideLeft {
-    width: 49vw;
-    float: left;
+    width   : 48.5vw;
+    // float: left;
 }
 
 .sideRight {
-    width: 49vw;
-    float: right;
+    width   : 48.5vw;
+    // float: right;
 }
 
-.one,
-.two,
-.three,
-.four {
-    height: 42.6vh;
-}
 
-.border {
-    border  : 0.104vw solid #0c2757;
-    position: relative;
-}
-
-.border>span {
-    width  : 13px;
-    height : 13px;
-    display: inline-block;
-}
-
-.borderSpan1 {
-    position     : absolute;
-    left         : -0.104vw;
-    top          : -0.104vw;
-    border       : 0.104vw solid #ffffff;
-    border-bottom: transparent;
-    border-right : transparent;
-
-}
-
-.borderSpan2 {
-    position     : absolute;
-    top          : -0.104vw;
-    right        : -0.104vw;
-    border       : 0.104vw solid #ffffff;
-    border-bottom: transparent;
-    border-left  : transparent;
-}
-
-.borderSpan3 {
-    position    : absolute;
-    left        : -0.104vw;
-    bottom      : -0.104vw;
-    border      : 0.104vw solid #ffffff;
-    border-top  : transparent;
-    border-right: transparent;
-}
-
-.borderSpan4 {
-    position   : absolute;
-    right      : -0.104vw;
-    bottom     : -0.104vw;
-    border     : 0.104vw solid #ffffff;
-    border-top : transparent;
-    border-left: transparent;
-}
-
-.line {
-    background: url("../img/main-tp1.png") no-repeat center;
-    height    : 0.59vh;
-    position  : relative;
-    top       : -2px;
-}
-
-.sideCate {
-    font-size  : 1.194vw;
-    margin-left: 0.623vw;
-    color      : #bafffc;
-    position: relative;
-}
-
-.sideCate span {
-    display     : inline-block;
-    width       : 0.21vw;
-    height      : 1.753vh;
-    margin-right: 0.42vw;
-    position    : relative;
-    background  : #f1ff52;
-}
-
-/* 天气预报 begin */
-#weather {
-    >.content {
-        color : white;
-
-        .timedate {
-            padding-left: 10px;
-            width       : 50%;
-            float       : left;
-
-            .time {
-                font-size : 2.8vw;
-                color     : #00fafe;
-                text-align: left;
-                margin-top: 11px;
-            }
-
-            .time+div {
-                font-size  : 16px;
-                padding-top: 3vh;
-                line-height: 20px;
-            }
-        }
-
-        .today {
-            padding-bottom  : 5vh;
-            border-bottom   : 2px solid #2f3fcd;
-
-            .weatop {
-                padding-top    : 10px;
-                float          : left;
-                display        : flex;
-                justify-content: flex-start;
-                align-items    : center;
-
-                .temp {
-                    font-size: 45px;
-                    color    : #fdd300;
-                }
-
-                .weaIcon {
-                    width      : 11vh;
-                    margin-left: 5px;
-                }
-            }
-
-            .weadetail {
-                height     : 9vh;
-                padding-top: 2vh;
-            }
-        }
-        .forecast {
-            width     : 33%;
-            float     : left;
-            text-align: center;
-
-            .week {
-                font-size     : 13px;
-                line-height   : 20px;
-                // background : #3266CC;
-                color         : #fff;
-            }
-
-            .weaIcon {
-                width     : 9vh;
-                margin-top: 5px;
-            }
-
-            .weatop {
-                padding-top: 10px;
-            }
-        }
-
-        .forecast2 {
-            border-left : 2px solid;
-            border-right: 2px solid;
-            border-image: linear-gradient(#0e153d, #2d3cc4, #0e153d) 10 30;
-        }
-
-
-
-        .weadetail {
-            line-height: 20px;
-            font-size  : 12px;
-            text-align : center;
-        }
-    }
-}
-
-/* 天气预报 end */
 .datatitle {
     background     : linear-gradient(to bottom, #0ca0d9, #6659ef);
     width          : 100%;
@@ -363,151 +178,12 @@ textarea:-moz-placeholder {
     display        : flex;
     align-items    : center;
     justify-content: center;
-}
-
-.two {
-    .rainfall {
-        width       : 48vw;
-        height      : 41vh;
-        overflow    : hidden;
-        padding-left: 10px;
-
-        .leftpart {
-            height           : 95%;
-            width            : 45%;
-            // background-image : url(../img/mappic/地图海门.png);
-            background-repeat: no-repeat;
-            background-size  : 100% 100%;
-            float            : left;
-            position         : relative;
-
-            ul {
-                li {
-                    img {
-                        margin-right: 10px;
-                    }
-                }
-                color      : white;
-                font-size  : 13px;
-                line-height: 16px;
-                .append{
-                    position: absolute;
-                }
-            }
-        }
-
-        .rightpart {
-            height     : 95%;
-            margin-left: 50%;
-            color      : white;
-
-            ul {
-                height    : 60%;
-                padding   : 2% 0;
-                background: #072a41;
-
-                li {
-                    height      : 17%;
-                    overflow    : hidden;
-                    padding-left: 10%;
-
-                    span {
-                        float        : right;
-                        padding-right: 10%;
-                    }
-                }
-            }
-
-            .raininfo {
-                margin-top   : 3%;
-                border-radius: 8px;
-                padding      : 2%;
-                background   : #072a41;
-            }
-        }
-    }
+    font-size      : 2vw;
 }
 
 
-.three,.four {
 
-    .rightparttitle{
-        color: #9fdfda;
-        font-size: 0.834vw;
-        position: absolute;
-        left: 50%;
-        top: 0.5vh;
-    }
-    .river {
-        width       : 48vw;
-        height      : 41vh;
-        overflow    : hidden;
-        padding-left: 10px;
-
-        .leftpart {
-            height           : 95%;
-            width            : 45%;
-            // background-image : url(../img/mappic/.png);
-            background-repeat: no-repeat;
-            background-size  : 100% 100%;
-            float            : left;
-            position         : relative;
-            
-            ul {
-                li {
-                    img {
-                        margin-right: 10px;
-                    }
-                }
-                color      : white;
-                font-size  : 13px;
-                line-height: 16px;
-                .append{
-                    position: absolute;
-                }
-            }
-        }
-
-        .rightpart {
-            height     : 95%;
-            margin-left: 50%;
-            color      : white;
-            .datatitle,ul li{
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                text-align: center;
-                p:first-child{
-                    width: 30%;
-                    overflow: hidden;
-                    text-overflow: ellipsis; 
-                     white-space: nowrap;
-                     text-align: left;
-                     padding-left: 2vh;
-                }
-                p:nth-child(2){
-                    width: 23%;
-                }
-                p:nth-child(3){
-                    width: 23%;
-                }
-                p:nth-child(4){
-                    width: 23%;
-                }
-            }
-            ul {
-                height    : 90%;
-                background: #072a41;
-                overflow: hidden;
-                li{
-                    height: 10%;
-                    font-size: 1.8vh;
-                }
-
-            }
-
-        }
-    }
+#area,#river,#rain,#weatheriframe{
+    width: 49vw;
+    height: 42.6vh;
 }
-
-

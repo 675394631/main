@@ -1,0 +1,174 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.border {
+    border  : 0.104*2.06vw solid #0c2757;
+    position: relative;
+}
+
+.border>span {
+    width  : 13px;
+    height : 13px;
+    display: inline-block;
+}
+
+.borderSpan1 {
+    position     : absolute;
+    left         : -0.104*2.06vw;
+    top          : -0.104*2.06vw;
+    border       : 0.104*2.06vw solid #ffffff;
+    border-bottom: transparent;
+    border-right : transparent;
+
+}
+
+.borderSpan2 {
+    position     : absolute;
+    top          : -0.104*2.06vw;
+    right        : -0.104*2.06vw;
+    border       : 0.104*2.06vw solid #ffffff;
+    border-bottom: transparent;
+    border-left  : transparent;
+}
+
+.borderSpan3 {
+    position    : absolute;
+    left        : -0.104*2.06vw;
+    bottom      : -0.104*2.06vw;
+    border      : 0.104*2.06vw solid #ffffff;
+    border-top  : transparent;
+    border-right: transparent;
+}
+
+.borderSpan4 {
+    position   : absolute;
+    right      : -0.104*2.06vw;
+    bottom     : -0.104*2.06vw;
+    border     : 0.104*2.06vw solid #ffffff;
+    border-top : transparent;
+    border-left: transparent;
+}
+
+.line {
+    background: url("../img/main-tp1.png") no-repeat center;
+    height    : 0.59*2.32vh;
+    position  : relative;
+    top       : -2px;
+}
+
+.sideCate {
+    font-size  : 1.194*2.06vw;
+    margin-left: 0.623*2.06vw;
+    color      : #bafffc;
+    position   : relative;
+}
+
+.sideCate span {
+    display     : inline-block;
+    width       : 0.21*2.06vw;
+    height      : 1.753*2.32vh;
+    margin-right: 0.42*2.06vw;
+    position    : relative;
+    background  : #f1ff52;
+}
+
+/* 天气预报 begin */
+.one{
+    width: 99vw;
+    height: 99vh;
+}
+#weather {
+    width: 100%;
+    height: 50%;
+    >.content {
+        color: white;
+
+        .timedate {
+            padding-left: 0.521*2.06vw;
+            width       : 50%;
+            float       : left;
+
+            .time {
+                font-size : 2.8*2.06vw;
+                color     : #00fafe;
+                text-align: left;
+                margin-top: 0.521*2.06vw;
+            }
+
+            .time+div {
+                font-size  : 0.833*2.06vw;
+                padding-top: 3*2.32vh;
+                line-height: 20px;
+            }
+        }
+
+        .today {
+            padding-bottom: 5*2.32vh;
+            border-bottom : 2px solid #2f3fcd;
+
+            .weatop {
+                padding-top    : 10px;
+                float          : left;
+                display        : flex;
+                justify-content: flex-start;
+                align-items    : center;
+
+                .temp {
+                    font-size: 2.34*2.06vw;
+                    color    : #fdd300;
+                }
+
+                .weaIcon {
+                    width      : 11*2.32vh;
+                    margin-left: 5px;
+                }
+            }
+
+            .weadetail {
+                height     : 9*2.32vh;
+                padding-top: 2*2.32vh;
+            }
+        }
+
+        .forecast {
+            width     : 33%;
+            float     : left;
+            text-align: center;
+
+            .week {
+                font-size     : 1.8vw;
+                line-height   : 1.04*2.06vw;
+                // background : #3266CC;
+                color         : #fff;
+            }
+
+            .weaIcon {
+                width     : 9*2.32vh;
+                margin-top: 5px;
+            }
+
+            .weatop {
+                padding-top: 10px;
+            }
+        }
+
+        .forecast2 {
+            border-left : 2px solid;
+            border-right: 2px solid;
+            border-image: linear-gradient(#0e153d, #2d3cc4, #0e153d) 10 30;
+        }
+
+        .weadetail {
+            line-height: 2.9vw;
+            font-size  : 1.8vw;
+            text-align : center;
+        }
+    }
+}
+
+/* 天气预报 end */

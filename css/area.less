@@ -1,0 +1,179 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    background   : #5de5f0;
+    width        : 0.8vw*2.06vw;
+    display      : inline-block;
+    height       : 0.8vw*2.06vw;
+    border-radius: 50%;
+}
+
+.border {
+    border  : 0.104*2.06vw solid #0c2757;
+    position: relative;
+}
+
+.border>span {
+    width  : 13px;
+    height : 13px;
+    display: inline-block;
+}
+
+.borderSpan1 {
+    position     : absolute;
+    left         : -0.104*2.06vw;
+    top          : -0.104*2.06vw;
+    border       : 0.104*2.06vw solid #ffffff;
+    border-bottom: transparent;
+    border-right : transparent;
+
+}
+
+.borderSpan2 {
+    position     : absolute;
+    top          : -0.104*2.06vw;
+    right        : -0.104*2.06vw;
+    border       : 0.104*2.06vw solid #ffffff;
+    border-bottom: transparent;
+    border-left  : transparent;
+}
+
+.borderSpan3 {
+    position    : absolute;
+    left        : -0.104*2.06vw;
+    bottom      : -0.104*2.06vw;
+    border      : 0.104*2.06vw solid #ffffff;
+    border-top  : transparent;
+    border-right: transparent;
+}
+
+.borderSpan4 {
+    position   : absolute;
+    right      : -0.104*2.06vw;
+    bottom     : -0.104*2.06vw;
+    border     : 0.104*2.06vw solid #ffffff;
+    border-top : transparent;
+    border-left: transparent;
+}
+
+.line {
+    background: url("../img/main-tp1.png") no-repeat center;
+    height    : 0.59*2.32vh;
+    position  : relative;
+    top       : -2px;
+}
+
+.sideCate {
+    font-size  : 1.194*2.06vw;
+    margin-left: 0.623*2.06vw;
+    color      : #bafffc;
+    position   : relative;
+}
+
+.sideCate span {
+    display     : inline-block;
+    width       : 0.21*2.06vw;
+    height      : 1.753*2.32vh;
+    margin-right: 0.42*2.06vw;
+    position    : relative;
+    background  : #f1ff52;
+}
+
+
+.four {
+    width: 99vw;
+    height: 99vh;
+    .rightparttitle {
+        color    : #9fdfda;
+        font-size: 0.834*2.06vw;
+        position : absolute;
+        left     : 50%;
+        top      : 0.5*2.32vh;
+    }
+
+    .river {
+        width       : 47*2.06vw;
+        height      : 90vh;
+        overflow    : hidden;
+        padding-left: 10px;
+
+        .leftpart {
+            height              : 98%;
+            width               : 45%;
+            // background-image : url(../img/mappic/.png);
+            background-repeat   : no-repeat;
+            background-size     : 100% 100%;
+            float               : left;
+            position            : relative;
+
+            ul {
+                li {
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                color      : white;
+                font-size  : 0.7*2.06vw;
+                line-height: 1.2*2.06vw;
+
+                .append {
+                    position: absolute;
+                }
+            }
+        }
+
+        .rightpart {
+            height     : 98%;
+            margin-left: 50%;
+            color      : white;
+
+            .datatitle,
+            ul li {
+                display        : flex;
+                justify-content: flex-start;
+                align-items    : center;
+                text-align     : center;
+
+                p:first-child {
+                    width        : 30%;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                    text-align   : left;
+                    padding-left : 2*2.32vh;
+                }
+
+                p:nth-child(2) {
+                    width: 23%;
+                }
+
+                p:nth-child(3) {
+                    width: 23%;
+                }
+
+                p:nth-child(4) {
+                    width: 23%;
+                }
+            }
+            ul {
+                height    : 90%;
+                
+                // overflow  : hidden;
+
+                li {
+                    height   : 10%;
+                    background: #072a41;
+                    font-size: 1.8*2.32vh;
+                }
+
+            }
+
+        }
+    }
+}

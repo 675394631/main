@@ -73,12 +73,17 @@ body {
   position: relative;
   background: #f1ff52;
 }
-.two {
+/* .two {
   width: 99vw;
   height: 99vh;
+} */
+.two {
+  width: 99%;
+  height: 99%;
 }
 .two .rainfall {
-  width: 96.82vw;
+  /* width: 96.82vw; */
+  width: 98%;
   height: 90vh;
   overflow: hidden;
   padding-left: 10px;

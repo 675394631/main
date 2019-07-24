@@ -1,0 +1,181 @@
+/*基本样式*/
+html {
+  font-family: "Microsoft YaHei";
+  overflow-x : hidden;
+}
+
+body {
+  /*1925px*/
+  /*1084px*/
+  margin    : 0;
+  padding   : 0;
+  background: #060b1c;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd {
+  margin    : 0;
+  padding   : 0;
+  list-style: none;
+}
+
+a {
+  color          : #484848;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0aa1ed;
+}
+
+img {
+  vertical-align: middle;
+}
+
+input {
+  outline   : none;
+  background: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear  : both;
+}
+
+.lf {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+input {
+  overflow      : visible;
+  vertical-align: middle;
+  outline       : 0;
+  margin        : 0;
+  padding       : 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input:-moz-placeholder {
+  color: #ffffff;
+}
+
+textarea:-moz-placeholder {
+  color: #ffffff;
+}
+
+input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+textarea:-moz-placeholder {
+  color: #ffffff;
+}
+
+.circle {
+  background   : #5de5f0;
+  width        : 0.8vw;
+  display      : inline-block;
+  height       : 0.8vw;
+  border-radius: 50%;
+}
+
+.redselected {
+  color: red;
+}
+
+.height10 {
+  height: 1.85vh;
+}
+
+/*正文*/
+.header {
+  height         : 5.18vh;
+  width          : 100vw;
+  background     : url("../img/top.png") no-repeat center;
+  background-size: 100% 110%;
+}
+
+/* 滚动新闻 begin */
+#rollNews {
+  height     : 4.25vh;
+  line-height: 4.25vh;
+  background : #060c1b;
+}
+
+#rollNews>.icon {
+  float     : left;
+  width     : 2vw;
+  height    : 2vw;
+  background: url('../img/小喇叭.png') no-repeat center;
+}
+
+#rollNews>span {
+  float: left;
+  color: white;
+  width: 10vw;
+}
+
+#rollNews .mar {
+  margin-left: 12vw;
+  height     : 2vw;
+  color      : #dc6502;
+  font-size  : 0.8vw;
+}
+
+/* 滚动新闻 end */
+.main {
+  width          : 98.5vw;
+  margin         : 0vh auto;
+  height         : 90vh;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.sideLeft {
+  width: 48.5vw;
+}
+
+.sideRight {
+  width: 48.5vw;
+}
+
+.datatitle {
+  background     : linear-gradient(to bottom, #0ca0d9, #6659ef);
+  width          : 100%;
+  height         : 10%;
+  color          : #fff;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  font-size      : 4.5vh;
+}
+
+#area,
+#river,
+#rain,
+#weatheriframe {
+  width : 49vw;
+  height: 42.6vh;
+}

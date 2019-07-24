@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>river</title>
-    <link rel="stylesheet/less" href="../css/warning.less">
-    <link rel="stylesheet/less" href="../css/river.less">
-    <script src="../js/less.min.js"></script>
+    <link rel="stylesheet" href="../css/warning.css">
+    <link rel="stylesheet" href="../css/river.css">
+    <!-- <script src="../js/less.min.js"></script> -->
 </head>
 <body>
         <div class="three border">
@@ -17,18 +17,22 @@
                 <span class="borderSpan4"></span>
                 <div class="line"></div>
                 <div class="sideCate"><span></span>主要河道
-                    <p class="rightparttitle">超警戒水位: 1个，低保证水位: 1个</p>
+                    <p class="rightparttitle"></p>
                 </div>
                 <div class="river">
                     <div class="leftpart">
                         <ul>
                             <li>
-                                <img src="../img/mappic/超警戒.png">
+                                <img src="../img/mappic/red.png">
                                 超警戒
                             </li>
                             <li>
-                                <img src="../img/mappic/低保证.png">
+                                <img src="../img/mappic/yellow.png">
                                 低保证
+                            </li>
+                            <li>
+                                <img src="../img/mappic/blue.png">
+                                正常
                             </li>
                         </ul>
 
@@ -36,13 +40,13 @@
                     <div class="rightpart">
                         <div class="datatitle">
                             <p>站名</p>
-                            <p>当前水位</p>
-                            <p>警戒水位</p>
-                            <p>保证水位</p>
+                            <p>当前</p>
+                            <p>警戒</p>
+                            <p>保证</p>
                         </div>
                         <div style="height: 100%;overflow: hidden;">
                             <ul id="marquee1">
-                                <li class="redselected">
+                                <!-- <li class="redselected">
                                     <p>
                                         <span class="circle"></span>
                                         站名称1
@@ -131,9 +135,7 @@
                                     <p>5.6</p>
                                     <p>5.6</p>
                                     <p>5</p>
-                                </li>
-
-
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -143,5 +145,6 @@
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/calendar.js"></script>
+<script src="../js/domain.js"></script>
 <script src="../js/river.js"></script>
 </html>

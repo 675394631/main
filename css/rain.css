@@ -1,0 +1,142 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.circle {
+  background: #5de5f0;
+  width: 1.648vw;
+  display: inline-block;
+  height: 1.648vw;
+  border-radius: 50%;
+}
+.border {
+  border: 0.21424vw solid #0c2757;
+  position: relative;
+}
+.border > span {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
+.borderSpan1 {
+  position: absolute;
+  left: -0.21424vw;
+  top: -0.21424vw;
+  border: 0.21424vw solid #ffffff;
+  border-bottom: transparent;
+  border-right: transparent;
+}
+.borderSpan2 {
+  position: absolute;
+  top: -0.21424vw;
+  right: -0.21424vw;
+  border: 0.21424vw solid #ffffff;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+.borderSpan3 {
+  position: absolute;
+  left: -0.21424vw;
+  bottom: -0.21424vw;
+  border: 0.21424vw solid #ffffff;
+  border-top: transparent;
+  border-right: transparent;
+}
+.borderSpan4 {
+  position: absolute;
+  right: -0.21424vw;
+  bottom: -0.21424vw;
+  border: 0.21424vw solid #ffffff;
+  border-top: transparent;
+  border-left: transparent;
+}
+.line {
+  background: url("../img/main-tp1.png") no-repeat center;
+  height: 1.3688vh;
+  position: relative;
+  top: -2px;
+}
+.sideCate {
+  font-size: 2.45964vw;
+  margin-left: 1.28338vw;
+  color: #bafffc;
+  position: relative;
+}
+.sideCate span {
+  display: inline-block;
+  width: 0.4326vw;
+  height: 4.06696vh;
+  margin-right: 0.8652vw;
+  position: relative;
+  background: #f1ff52;
+}
+.two {
+  width: 99vw;
+  height: 99vh;
+}
+.two .rainfall {
+  width: 96.82vw;
+  height: 90vh;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.two .rainfall .leftpart {
+  height: 89vh;
+  width: 45%;
+  background-image: url(../img/mappic/海门行政地图.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  position: relative;
+}
+.two .rainfall .leftpart img{
+  width: 12px;
+}
+.two .rainfall .leftpart ul {
+  color: white;
+  font-size: 1.442vw;
+  line-height: 1.86vw;
+}
+.two .rainfall .leftpart ul li img {
+  margin-right: 10px;
+  /* width: 2.2vh; */
+}
+.two .rainfall .leftpart ul .append {
+  position: absolute;
+}
+.two .rainfall .rightpart {
+  height: 89vh;
+  margin-left: 50%;
+  color: white;
+}
+.two .rainfall .rightpart ul {
+  height: 54vh;
+  padding: 2% 0;
+  background: #072a41;
+}
+.two .rainfall .rightpart ul li {
+  height: 9vh;
+  line-height: 9vh;
+  overflow: hidden;
+  padding-left: 2vw;
+  font-size: 1.9vw;
+}
+.two .rainfall .rightpart ul li img{
+  width: 3vh;
+}
+.two .rainfall .rightpart ul li span {
+  float: right;
+  padding-right: 10%;
+}
+.two .rainfall .rightpart .raininfo {
+  margin-top: 3%;
+  border-radius: 8px;
+  padding: 2%;
+  height: 16vh;
+  line-height: 7vh;
+  background: #072a41;
+  font-size: 1.854vw;
+}

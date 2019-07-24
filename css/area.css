@@ -1,0 +1,183 @@
+html,
+body {
+    height : 100%;
+    width  : 100%;
+    margin : 0;
+    padding: 0;
+}
+
+.circle {
+    background   : #5de5f0;
+    width        : 1.648vw;
+    display      : inline-block;
+    height       : 1.648vw;
+    border-radius: 50%;
+}
+
+.border {
+    border  : 0.21424vw solid #0c2757;
+    position: relative;
+}
+
+.border>span {
+    width  : 13px;
+    height : 13px;
+    display: inline-block;
+}
+
+.borderSpan1 {
+    position     : absolute;
+    left         : -0.21424vw;
+    top          : -0.21424vw;
+    border       : 0.21424vw solid #ffffff;
+    border-bottom: transparent;
+    border-right : transparent;
+}
+
+.borderSpan2 {
+    position     : absolute;
+    top          : -0.21424vw;
+    right        : -0.21424vw;
+    border       : 0.21424vw solid #ffffff;
+    border-bottom: transparent;
+    border-left  : transparent;
+}
+
+.borderSpan3 {
+    position    : absolute;
+    left        : -0.21424vw;
+    bottom      : -0.21424vw;
+    border      : 0.21424vw solid #ffffff;
+    border-top  : transparent;
+    border-right: transparent;
+}
+
+.borderSpan4 {
+    position   : absolute;
+    right      : -0.21424vw;
+    bottom     : -0.21424vw;
+    border     : 0.21424vw solid #ffffff;
+    border-top : transparent;
+    border-left: transparent;
+}
+
+.line {
+    background: url("../img/main-tp1.png") no-repeat center;
+    height    : 1.3688vh;
+    position  : relative;
+    top       : -2px;
+}
+
+.sideCate {
+    font-size  : 2.45964vw;
+    margin-left: 1.28338vw;
+    color      : #bafffc;
+    position   : relative;
+}
+
+.sideCate span {
+    display     : inline-block;
+    width       : 0.4326vw;
+    height      : 4.06696vh;
+    margin-right: 0.8652vw;
+    position    : relative;
+    background  : #f1ff52;
+}
+
+.four {
+    width : 99vw;
+    height: 99vh;
+}
+
+.four .rightparttitle {
+    color: #9fdfda;
+    font-size: 1.71804vw;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    top: 1.16vh;
+}
+
+.four .river {
+    width       : 96.82vw;
+    height      : 90vh;
+    overflow    : hidden;
+    padding-left: 10px;
+}
+
+.four .river .leftpart {
+    height           : 89vh;
+    width            : 45%;
+    /* background-image: url(../img/mappic/通启中片水系.png); */
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+    float            : left;
+    position         : relative;
+    margin-left: 3%;
+}
+
+.four .river .leftpart ul {
+    color      : white;
+    font-size  : 1.442vw;
+    line-height: 2.472vw;
+    margin-left: -7%;
+}
+
+.four .river .leftpart ul li img {
+    margin-right: 10px;
+}
+
+.four .river .leftpart ul .append {
+    position: absolute;
+}
+
+.four .river .rightpart {
+    height     : 89vh;
+    margin-left: 50%;
+    color      : white;
+    background: #072a41;
+}
+
+.four .river .rightpart .datatitle,
+.four .river .rightpart ul li {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    text-align     : center;
+}
+
+.four .river .rightpart .datatitle p:first-child,
+.four .river .rightpart ul li p:first-child {
+    width        : 40%;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+    text-align   : left;
+    padding-left : 1.64vh;
+}
+
+.four .river .rightpart .datatitle p:nth-child(2),
+.four .river .rightpart ul li p:nth-child(2) {
+    width: 20%;
+}
+
+.four .river .rightpart .datatitle p:nth-child(3),
+.four .river .rightpart ul li p:nth-child(3) {
+    width: 20%;
+}
+
+.four .river .rightpart .datatitle p:nth-child(4),
+.four .river .rightpart ul li p:nth-child(4) {
+    width: 20%;
+}
+
+.four .river .rightpart ul {
+    height: 80vh;
+}
+
+.four .river .rightpart ul li {
+    height    : 8vh;
+    background: #072a41;
+    font-size : 4.176vh;
+}

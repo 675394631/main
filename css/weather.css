@@ -138,6 +138,8 @@ body {
   border-left: 2px solid;
   border-right: 2px solid;
   border-image: linear-gradient(#0e153d, #2d3cc4, #0e153d) 10 30;
+      border-top-width: 0px;
+    border-bottom-width: 0px;
 }
 #weather > .content .weadetail {
   line-height: 6.5vh;
